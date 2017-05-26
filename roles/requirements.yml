@@ -1,0 +1,16 @@
+# use for CI testing for roles
+# can pass this in ansible-galaxy command
+#
+# can pass to file of roles to install
+#
+# usually points to internal git repo
+#
+# ex of roles to install:
+- samdoran.java
+- geerlingguy.tomcat6
+
+# use to pull from service or internal
+#
+# must be in roles/requirements.yml (runs ansible-galaxy install against this file), how tower works to do this
+#
+# 1 - git clone each of the role dirs manually first before installing requirements.yml

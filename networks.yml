@@ -1,0 +1,29 @@
+- hosts: vyos
+  connection: local
+- - vyos_facts:
+  - vyos_command:
+# don't need provider for 2.3
+#      provider: 
+#      - user:vyos
+#        password:
+#        transport: cli | api
+      commands:
+        - show version
+        - show date
+      register: vyos_stuff
+
+
+- block:
+  - vyos_config:
+      lines:
+        - set
+        - set
+      until:
+        result[0] gt
+        result[1]
+
+
+rescue:
+  - vyos_config:
+      lines:
+        -set intesomething disable

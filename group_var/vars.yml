@@ -1,0 +1,6 @@
+device_os : ios
+          : nexus
+          : vyos
+          : eos
+
+# device_os set by dynamic inventory

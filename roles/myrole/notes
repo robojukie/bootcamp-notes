@@ -1,0 +1,18 @@
+modularity
+assets
+
+defaults vs vars
+vars: central to role execution
+
+break down tasks by roles 
+
+namespace vars
+
+role dependencies
+
+
+how to create role to run specific tasks without using conditionals
+- use include and include_vars
+- include will run down right set of tasks
+- ex can create folders inside roles to control exec paths
+

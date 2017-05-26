@@ -1,0 +1,8 @@
+---
+# tasks file for myrole
+# how to create role to run specific tasks without using conditionals
+- use include and include_vars
+- include will run down right set of tasks
+- ex can create folders inside roles to control exec paths
+
+-include: "{{ ansible.os_family}}-{{ansible_major_version}}.yml"

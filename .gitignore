@@ -1,0 +1,2 @@
+#should ignore everything in roles dir except requirements.yml so you can make each role a separate git project
+
